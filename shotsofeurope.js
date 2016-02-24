@@ -52,6 +52,17 @@
 
     window.onload = function () {      // wait for window to load
 
+        (function addPicsOnClick(){
+            $('.moreButton').click(function(){
+//                var loc = ($(this).parent().attr('id'));
+//                loadAdditionalPics(loc);
+                $(this).parent().children().removeClass('additionalPics');
+                $(this).addClass('hideButton');
+
+            })
+        })();
+
+
         /** to lock second navigation box when it's scrolled to top of page (need to wait for window to load or querySelector will return NULL **/
 
         var lockBox = (function (){
@@ -74,10 +85,7 @@
        var scrollListener = (function (){
             var link = document.querySelectorAll(".location");
 
-            console.log(link);
-
-            var linkLen = link.length - 1;             // there's double-counting of elements with this class name. good to eliminate in future.
-            console.log(linkLen);
+            var linkLen = link.length ;             // there's double-counting of elements with this class name. good to eliminate in future.
 
             for (i = 0; i < linkLen; i++) {
                 link[i].addEventListener("click", function () {
@@ -91,17 +99,55 @@
                     else if (this.id == "linkStuttgart") {
                         smoothScroll("#Stuttgart");
                     }
+                    else if (this.id == "linkPrague") {
+                        smoothScroll("#Prague");
+                    }
+                    else if (this.id == "linkOlomoucs") {
+                        smoothScroll("#Olomoucs");
+                    }
+                    else if (this.id == "linkZdiar") {
+                        smoothScroll("#Zdiar");
+                    }
+                    else if (this.id == "linkBratislava") {
+                        smoothScroll("#Bratislava");
+                    }
+                    else if (this.id == "linkVienna") {
+                        smoothScroll("#Vienna");
+                    }
+                    else if (this.id == "linkBudapest") {
+                        smoothScroll("#Budapest");
+                    }
+                    else if (this.id == "linkPecs") {
+                        smoothScroll("#Pecs");
+                    }
+                    else if (this.id == "linkParis") {
+                        smoothScroll("#Paris");
+                    }
+                    else if (this.id == "linkHeidelberg") {
+                        smoothScroll("#Heidelberg");
+                    }
+                    else if (this.id == "linkFrankfurt") {
+                        smoothScroll("#Frankfurt");
+                    }
+                    else if (this.id == "linkIstanbul") {
+                        smoothScroll("#Istanbul");
+                    }
+                    else if (this.id == "linkThessaloniki") {
+                        smoothScroll("#Thessaloniki");
+                    }
+                    else if (this.id == "linkAthens") {
+                        smoothScroll("#Athens");
+                    }
+                    else if (this.id == "linkRome") {
+                        smoothScroll("#Rome");
+                    }
+                    else if (this.id == "linkCopenhagen") {
+                        smoothScroll("#Copenhagen");
+                    }
                 })
             }
 
         })();
-
-
-//        var img = document.createElement("img");
-//    img.src = "http://www.google.com/intl/en_com/images/logo_plain.png";
-//
-//    var src = document.getElementById("header");
-//    src.appendChild(img);
 
         (function LoadPics() {
             var location = "London";
@@ -131,25 +177,16 @@
 
     };
 
-
     /*** Smooth scrolling ***/
 
     var smoothScroll = function (location) {
-
         var loc = location;
-
         var elem = document.querySelector(loc);
-
         var pos = getOffsetRect(elem).top;     //distance from top of window
-
         var curr = window.pageYOffset || document.body.scrollTop;     //current position
-
         var dis = Math.round(pos - curr);
-
         var jump = Math.round(dis / 10);
-
-        var leaps = dis / jump;
-
+        var leaps = Math.round(dis / jump);
         var timer = 20;
 
         if (Math.abs(dis) < 100) {
@@ -157,30 +194,42 @@
         }
         else if (dis > 0) {       //scroll down
             for (var i = leaps; i > 0; i--) {
+                if (i === 1) {
+                    setTimeout(
+                            "window.scrollTo(0, " + pos + ")", timer);
 
-                setTimeout(
-                        "window.scrollTo(0, " + curr + ")", timer);
-//            console.log("curr" + " " + curr);
-                timer = timer + 20;
-                curr = curr + jump;
-//            console.log(timer);
+                } else {
+                    setTimeout(
+                            "window.scrollTo(0, " + curr + ")", timer);
+                    timer = timer + 20;
+                    curr = curr + jump;
+                }
             }
         }
         else if (dis < 0) {       //scroll up
             for (var i = leaps; i > 0; i--) {
-                setTimeout(
-                        "window.scrollTo(0, " + curr + ")", timer);
-//            console.log("curr" + " " + curr);
-                timer = timer + 20;
-                curr = curr + jump;
-//            console.log(timer);
+                if (i === 1) {
+                    setTimeout(
+                            "window.scrollTo(0, " + pos + ")", timer);
+                } else {
+                    setTimeout(
+                            "window.scrollTo(0, " + curr + ")", timer);
 
+                    timer = timer + 20;
+                    curr = curr + jump;
+                }
             }
         }
+
     };
 
 
     /**** Module to load more pictures ****/
+
+
+
+
+
 
 //<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 //

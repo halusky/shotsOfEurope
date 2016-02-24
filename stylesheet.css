@@ -246,6 +246,10 @@ button {
     margin-right: auto;
 }
 
+.additionalPics{
+    display: none;
+}
+
 h1{
     font-size: 3em;
     margin:0;
@@ -256,8 +260,9 @@ h2{
     font-weight: normal;
     margin-top: 0;
     color: white;
+    clear: right;
+    clear: left;
     /*text-align: center;*/
-
 
 }
 
@@ -283,6 +288,7 @@ h2{
 #imgLeft {
     float: left;
     width: 49%;
+
 }
 
 #imgRight {
@@ -307,5 +313,9 @@ h2{
     font-size: 1.5em;
     text-align: center;
     clear: both;
+}
+
+.hideButton{
+    display: none;
 }
 
