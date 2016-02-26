@@ -1,1 +1,2 @@
 # shotsOfEurope
+shotsOfEurope.com
