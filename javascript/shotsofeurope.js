@@ -62,7 +62,6 @@
             })
         })();
 
-
         /** to lock second navigation box when it's scrolled to top of page (need to wait for window to load or querySelector will return NULL **/
 
         var lockBox = (function (){
@@ -77,8 +76,6 @@
                 }
             });
         })();
-
-
 
         /** to have links exec the smoothScroll function **/
 
@@ -224,27 +221,10 @@
     };
 
 
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
+
     /**** Module to load more pictures ****/
-
-
-
-
-
-
-//<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-//
-//jQuery("document").ready(function($){
-//
-//    var nav = $('#navigation');
-//
-//    $(window).scroll(function () {
-//    if ($(this).scrollTop() > 136) {
-//    nav.addClass("f");
-//    } else {
-//    nav.removeClass("f");
-//    }
-//    });
-//
-//    });
 
 })();

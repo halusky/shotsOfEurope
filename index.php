@@ -5,12 +5,31 @@
     <title>ShotsOfEurope</title>
     <link href ="stylesheet.css" type="text/css" rel="stylesheet" media="all">
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
-    <script type='text/javascript' src='shotsofeurope.js'></script>
+    <script type='text/javascript' src='javascript/shotsofeurope.js'></script>
     <script type='text/javascript' src='libraries/echo.js'></script>
 
 
 </head>
 <body>
+
+    <div class="loader">
+        <div id = 'loaderBackground'>
+            <img src = "pictures/background.png">
+        </div>
+        <div id= 'loaderContent'>
+            <div id = 'loaderLogo'>
+                <img src = "pictures/SE3white.png">
+            </div>
+            <div id = 'loaderGif'>
+                <!--<img src = "pictures/preloader.gif">-->
+                <div id="fountainTextG"><div id="fountainTextG_1" class="fountainTextG">L</div><div id="fountainTextG_2" class="fountainTextG">o</div><div id="fountainTextG_3" class="fountainTextG">a</div><div id="fountainTextG_4" class="fountainTextG">d</div><div id="fountainTextG_5" class="fountainTextG">i</div><div id="fountainTextG_6" class="fountainTextG">n</div><div id="fountainTextG_7" class="fountainTextG">g</div><div id="fountainTextG_8" class="fountainTextG"> </div><div id="fountainTextG_9" class="fountainTextG">S</div><div id="fountainTextG_10" class="fountainTextG">h</div><div id="fountainTextG_11" class="fountainTextG">o</div><div id="fountainTextG_12" class="fountainTextG">t</div><div id="fountainTextG_13" class="fountainTextG">s</div></div>
+            </div>
+        </div>
+
+        <!--<div id="fountainTextG"><div id="fountainTextG_1" class="fountainTextG">L</div><div id="fountainTextG_2" class="fountainTextG">o</div><div id="fountainTextG_3" class="fountainTextG">a</div><div id="fountainTextG_4" class="fountainTextG">d</div><div id="fountainTextG_5" class="fountainTextG">i</div><div id="fountainTextG_6" class="fountainTextG">n</div><div id="fountainTextG_7" class="fountainTextG">g</div><div id="fountainTextG_8" class="fountainTextG"> </div><div id="fountainTextG_9" class="fountainTextG">S</div><div id="fountainTextG_10" class="fountainTextG">h</div><div id="fountainTextG_11" class="fountainTextG">o</div><div id="fountainTextG_12" class="fountainTextG">t</div><div id="fountainTextG_13" class="fountainTextG">s</div></div>-->
+
+    </div>
+
     <div id = "landing">
         <div id = "background">
             <img src = "pictures/background.png">

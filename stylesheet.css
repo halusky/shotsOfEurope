@@ -3,8 +3,60 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 
 }
+
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    /*background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);*/
+    background: 50% 50% no-repeat rgb(249,249,249);
+
+}
+
+#loaderBackground{
+    position: fixed;
+    z-index: -1;
+}
+
+#loaderContent{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    right: 15%;
+}
+
+
+#loaderLogo img{
+    width: 25%;
+}
+
+#loaderGif{
+    /*position: absolute;*/
+    /*top: 30%;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*z-index: 1;*/
+
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    /*right: 15%;*/
+    min-width: 700px;
+    max-width: 1280px;
+    height: 100px;
+    z-index: 1;
+
+}
+
 /**************************************** ==== Landing Page ==== ****************************************/
 #landing{
     display: none;
@@ -251,11 +303,14 @@ button {
 }
 
 h1{
+    font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     font-size: 3em;
     margin:0;
 }
 
 h2{
+    /*display: none;*/
 
     font-weight: normal;
     margin-top: 0;
@@ -319,3 +374,202 @@ h2{
     display: none;
 }
 
+
+
+
+
+
+
+#fountainTextG{
+    z-index: 999;
+    width:870px;
+    margin:auto;
+}
+
+.fountainTextG{
+    color:rgb(0,0,0);
+    font-family:Arial;
+    font-size:91px;
+    text-decoration:none;
+    font-weight:normal;
+    font-style:normal;
+    float:left;
+    animation-name:bounce_fountainTextG;
+    -o-animation-name:bounce_fountainTextG;
+    -ms-animation-name:bounce_fountainTextG;
+    -webkit-animation-name:bounce_fountainTextG;
+    -moz-animation-name:bounce_fountainTextG;
+    animation-duration:4.28s;
+    -o-animation-duration:4.28s;
+    -ms-animation-duration:4.28s;
+    -webkit-animation-duration:4.28s;
+    -moz-animation-duration:4.28s;
+    animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+    animation-direction:normal;
+    -o-animation-direction:normal;
+    -ms-animation-direction:normal;
+    -webkit-animation-direction:normal;
+    -moz-animation-direction:normal;
+    transform:scale(.5);
+    -o-transform:scale(.5);
+    -ms-transform:scale(.5);
+    -webkit-transform:scale(.5);
+    -moz-transform:scale(.5);
+}#fountainTextG_1{
+     animation-delay:1.53s;
+     -o-animation-delay:1.53s;
+     -ms-animation-delay:1.53s;
+     -webkit-animation-delay:1.53s;
+     -moz-animation-delay:1.53s;
+ }
+#fountainTextG_2{
+    animation-delay:1.83s;
+    -o-animation-delay:1.83s;
+    -ms-animation-delay:1.83s;
+    -webkit-animation-delay:1.83s;
+    -moz-animation-delay:1.83s;
+}
+#fountainTextG_3{
+    animation-delay:2.14s;
+    -o-animation-delay:2.14s;
+    -ms-animation-delay:2.14s;
+    -webkit-animation-delay:2.14s;
+    -moz-animation-delay:2.14s;
+}
+#fountainTextG_4{
+    animation-delay:2.44s;
+    -o-animation-delay:2.44s;
+    -ms-animation-delay:2.44s;
+    -webkit-animation-delay:2.44s;
+    -moz-animation-delay:2.44s;
+}
+#fountainTextG_5{
+    animation-delay:2.75s;
+    -o-animation-delay:2.75s;
+    -ms-animation-delay:2.75s;
+    -webkit-animation-delay:2.75s;
+    -moz-animation-delay:2.75s;
+}
+#fountainTextG_6{
+    animation-delay:3.06s;
+    -o-animation-delay:3.06s;
+    -ms-animation-delay:3.06s;
+    -webkit-animation-delay:3.06s;
+    -moz-animation-delay:3.06s;
+}
+#fountainTextG_7{
+    animation-delay:3.36s;
+    -o-animation-delay:3.36s;
+    -ms-animation-delay:3.36s;
+    -webkit-animation-delay:3.36s;
+    -moz-animation-delay:3.36s;
+}
+#fountainTextG_8{
+    animation-delay:3.67s;
+    -o-animation-delay:3.67s;
+    -ms-animation-delay:3.67s;
+    -webkit-animation-delay:3.67s;
+    -moz-animation-delay:3.67s;
+}
+#fountainTextG_9{
+    animation-delay:3.97s;
+    -o-animation-delay:3.97s;
+    -ms-animation-delay:3.97s;
+    -webkit-animation-delay:3.97s;
+    -moz-animation-delay:3.97s;
+}
+#fountainTextG_10{
+    animation-delay:4.28s;
+    -o-animation-delay:4.28s;
+    -ms-animation-delay:4.28s;
+    -webkit-animation-delay:4.28s;
+    -moz-animation-delay:4.28s;
+}
+#fountainTextG_11{
+    animation-delay:4.58s;
+    -o-animation-delay:4.58s;
+    -ms-animation-delay:4.58s;
+    -webkit-animation-delay:4.58s;
+    -moz-animation-delay:4.58s;
+}
+#fountainTextG_12{
+    animation-delay:4.89s;
+    -o-animation-delay:4.89s;
+    -ms-animation-delay:4.89s;
+    -webkit-animation-delay:4.89s;
+    -moz-animation-delay:4.89s;
+}
+#fountainTextG_13{
+    animation-delay:5.19s;
+    -o-animation-delay:5.19s;
+    -ms-animation-delay:5.19s;
+    -webkit-animation-delay:5.19s;
+    -moz-animation-delay:5.19s;
+}
+
+
+
+
+@keyframes bounce_fountainTextG{
+    0%{
+        transform:scale(1);
+        color:rgb(0,0,0);
+    }
+
+    100%{
+        transform:scale(.5);
+        color:rgb(255,255,255);
+    }
+}
+
+@-o-keyframes bounce_fountainTextG{
+    0%{
+        -o-transform:scale(1);
+        color:rgb(0,0,0);
+    }
+
+    100%{
+        -o-transform:scale(.5);
+        color:rgb(255,255,255);
+    }
+}
+
+@-ms-keyframes bounce_fountainTextG{
+    0%{
+        -ms-transform:scale(1);
+        color:rgb(0,0,0);
+    }
+
+    100%{
+        -ms-transform:scale(.5);
+        color:rgb(255,255,255);
+    }
+}
+
+@-webkit-keyframes bounce_fountainTextG{
+    0%{
+        -webkit-transform:scale(1);
+        color:rgb(0,0,0);
+    }
+
+    100%{
+        -webkit-transform:scale(.5);
+        color:rgb(255,255,255);
+    }
+}
+
+@-moz-keyframes bounce_fountainTextG{
+    0%{
+        -moz-transform:scale(1);
+        color:rgb(0,0,0);
+    }
+
+    100%{
+        -moz-transform:scale(.5);
+        color:rgb(255,255,255);
+    }
+}
